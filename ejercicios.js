@@ -1,4 +1,6 @@
 /**
+ * 
+ * 
  * El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que determina la cantidad de grasa de una persona.
 
     El BMI se calcula con la siguiente formula: peso / altura^2
@@ -12,7 +14,7 @@
  * 
  * 
  */
-
+//EJERCICIO 1
 function IndiceDeMasaCorporal(peso, altura){
     let bmi = peso/altura**2
     if(bmi < 18.5){
@@ -26,7 +28,7 @@ function IndiceDeMasaCorporal(peso, altura){
     }
 }
 
-//console.log(IndiceDeMasaCorporal(75,1.77))
+console.log(IndiceDeMasaCorporal(75,1.77))
 
 /**
     Escribir una función llamada fizzBuzz que reciba un número y retorne un string de acuerdo a lo siguiente:
@@ -35,7 +37,7 @@ function IndiceDeMasaCorporal(peso, altura){
     "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
     Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.
  */
-
+//EJERCICIO 2
 let fizzBuzz = (nuemero) =>{
 
     if(nuemero % 5 == 0 && nuemero % 3 == 0){
@@ -50,7 +52,7 @@ let fizzBuzz = (nuemero) =>{
     }
 } 
 
-//console.log(fizzBuzz(60))
+console.log(fizzBuzz(60))
 
 
   /**
@@ -58,7 +60,7 @@ let fizzBuzz = (nuemero) =>{
     Nota: puedes asumir que el número inicial va a ser menor o igual que el número final. // escribe tu respuesta acá
 
    */
-
+//EJERCICIO 3
     function sumarRango(numeroInicial, numeroFinal) {
         let suma = 0;
         
@@ -70,14 +72,14 @@ let fizzBuzz = (nuemero) =>{
       }
       
       
-    //  console.log(sumarRango(0, 10)); 
+     console.log(sumarRango(0, 10)); 
 
 
 /**
  * 
     Escribir una función llamada numeroDeAes que reciba un string y retorne el número de veces que aparece la letra "a": 
  */
-
+//EJERCICIO 4
     function numeroDeAes(cadena) {
         let contador = 0;
       
@@ -91,26 +93,26 @@ let fizzBuzz = (nuemero) =>{
       }
       
       
-      //console.log(numeroDeAes("abracadabra")); 
+      console.log(numeroDeAes("abracadabra")); 
 
 /**
  * 
     Escribir una función llamada sumarArreglo que reciba un arreglo de números y retorne la suma de todos los elementos
  */
-
+//EJERCICIO 5
 const sumarArreglo = arreglo => arreglo.reduce((suma, elemento) => suma + elemento, 0);
 
-//console.log(sumarArreglo([3, 1, 2])); 
+console.log(sumarArreglo([3, 1, 2])); 
 
 /**
  * Escribir una función llamada removerCeros que reciba un arreglo de números y retorne un nuevo arreglo excluyendo los ceros (0).
  */
-
+//EJERCICIO 6
 function removerCeros(arreglo) {
     return arreglo.filter(numero => numero !== 0);
 }
 
-//console.log(removerCeros([0, 1, 0, 2, 0, 3])); 
+console.log(removerCeros([0, 1, 0, 2, 0, 3])); 
 
 /**
 Escribir una función llamada transcribir que reciba un string (una cadena de ADN) y retorne otro string (su complemento ARN).
@@ -121,7 +123,7 @@ C -> G
 T -> A
 A -> U
  */
-
+//EJERCICIO 7
 function transcribir(cadenaADN) {
     let complementoARN = '';
   
@@ -147,12 +149,12 @@ function transcribir(cadenaADN) {
     return complementoARN;
 }
 
-//console.log(transcribir("ACGT")); 
+console.log(transcribir("ACGT")); 
 
 /**
  * Escribir una función llamada capitalizar que reciba un string y capitalice la primera letra:
  */
-
+//EJERCICIO 8
 function capitalizar(cadena) {
     if (cadena.length === 0) {
       return cadena;
@@ -161,13 +163,13 @@ function capitalizar(cadena) {
     return cadena.charAt(0).toUpperCase() + cadena.slice(1);
 }
 
-//console.log(capitalizar("aedro"));
+console.log(capitalizar("aedro"));
 
 /**
  *  
- * 
+ * Escribir una función llamada numAsteriscos que reciba una matriz (un arreglo de arreglos) y retorne el número de asteriscos:
  */
-
+//EJERCICIO 9
 function numAsteriscos(matriz) {
     let contadorAsteriscos = 0;
   
@@ -182,9 +184,9 @@ function numAsteriscos(matriz) {
     return contadorAsteriscos;
   }
 
-  // escribe tu función acá
+  
 
-// código de prueba
+
 console.log(numAsteriscos([
     ['*', '', '*'],
     ['', '*', ''],
